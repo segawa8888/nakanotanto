@@ -1,0 +1,236 @@
+@charset "UTF-8";
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Foundation
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+/**
+ * width や height がパディングやボーダーに依存しないようにする
+ */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/**
+ * デフォルトのマージンを削除
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1em;
+  margin: 0;
+}
+
+/**
+ * IE6/7 で 2 つ個以上の連続した br タグは無視するバグに対応
+ */
+br {
+  letter-spacing: 0;
+}
+
+/**
+ * デフォルトのマージンを削除
+ */
+p,
+blockquote,
+dl,
+dd,
+figure {
+  margin: 0;
+}
+
+/**
+ * 行が長くなると改行させる
+ * デフォルトのマージンを削除
+ */
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin: 0;
+}
+
+/**
+ * デフォルトのマージンを削除
+ */
+ol,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+/**
+ * デフォルトのマージンを削除
+ */
+li {
+  list-style: none;
+}
+
+/**
+ * フォントのサイズを統合
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-size: 1em;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:hover {
+  opacity: 0.6;
+}
+
+/**
+ * マージンとボーダーを削除
+ */
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+/**
+ * Chrome で selectbox の background-color を継承しない対策
+ */
+select {
+  background-color: inherit;
+  line-height: inherit;
+}
+
+/**
+ * セルの文字寄せをリセット
+ */
+th,
+td {
+  text-align: left;
+}
+
+/**
+ * 文字寄せをリセット
+ * 余白を削除
+ */
+caption {
+  text-align: left;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: "sans-serif";
+  color: #000000;
+}
+
+body {
+  color: #000000;
+  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro",
+    "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+  font-size: 3.2rem;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  word-break: break-all;
+}
+
+p,
+ul,
+ol,
+dl {
+  margin-bottom: 0rem;
+}
+
+a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a:hover {
+  opacity: 0.3;
+  text-decoration: none;
+}
+
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+* {
+  outline: none;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: normal;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: unset;
+}
+
+/* ios input要素のデフォルトスタイルをリセット　 */
+input[type="submit"],
+input[type="button"] {
+  border-radius: 0;
+  -webkit-box-sizing: content-box;
+  -webkit-appearance: button;
+  appearance: button;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+input[type="submit"]::-webkit-search-decoration,
+input[type="button"]::-webkit-search-decoration {
+  display: none;
+}
+input[type="submit"]::focus,
+input[type="button"]::focus {
+  outline-offset: -2px;
+}
